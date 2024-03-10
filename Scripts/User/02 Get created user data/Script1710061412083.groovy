@@ -17,3 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+response = WS.sendRequest(findTestObject('Get user by username'))
+
+WS.verifyResponseStatusCode(response, 200)
+
+WS.verifyElementText(response, 'id', '1')
+
+WS.verifyElementText(response, 'username', 'testuser01')
+
+WS.verifyElementText(response, 'firstName', 'Test')
+
+WS.verifyElementText(response, 'lastName', 'User')
+
+WS.verifyElementText(response, 'email', 'test1@email.com')
+

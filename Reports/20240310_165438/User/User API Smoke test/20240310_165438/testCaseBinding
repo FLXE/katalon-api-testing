@@ -1,0 +1,7 @@
+{"testCaseName":"Test Cases/User/01 Create new user","testCaseId":"Test Cases/User/01 Create new user","iterationVariableName":""}
+{"testCaseName":"Test Cases/User/02 Get created user data","testCaseId":"Test Cases/User/02 Get created user data","iterationVariableName":""}
+{"testCaseName":"Test Cases/User/03 Login","testCaseId":"Test Cases/User/03 Login","iterationVariableName":""}
+{"testCaseName":"Test Cases/User/04 Update User","testCaseId":"Test Cases/User/04 Update User","iterationVariableName":""}
+{"testCaseName":"Test Cases/User/05 Get updated user data","testCaseId":"Test Cases/User/05 Get updated user data","iterationVariableName":""}
+{"testCaseName":"Test Cases/User/06 Delete user","testCaseId":"Test Cases/User/06 Delete user","iterationVariableName":""}
+{"testCaseName":"Test Cases/User/07 Check user is deleted","testCaseId":"Test Cases/User/07 Check user is deleted","iterationVariableName":""}

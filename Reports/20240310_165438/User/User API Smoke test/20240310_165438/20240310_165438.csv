@@ -1,0 +1,41 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+User API Smoke test,,,,2024-03-10 16:54:44,2024-03-10 16:55:05,20.796s,PASSED
+,,,,,,,
+Test Cases/User/01 Create new user,,,,2024-03-10 16:54:44,2024-03-10 16:54:51,6.787s,PASSED
+"response = sendRequest(findTestObject(""Create User by with Array""))",,,,2024-03-10 16:54:45,2024-03-10 16:54:51,5.563s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2024-03-10 16:54:51,2024-03-10 16:54:51,0.032s,PASSED
+"verifyElementText(response, ""message"", ""ok"")",,,,2024-03-10 16:54:51,2024-03-10 16:54:51,0.143s,PASSED
+,,,,,,,
+Test Cases/User/02 Get created user data,,,,2024-03-10 16:54:51,2024-03-10 16:54:53,2.323s,PASSED
+"response = sendRequest(findTestObject(""Get user by username""))",,,,2024-03-10 16:54:52,2024-03-10 16:54:53,1.229s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2024-03-10 16:54:53,2024-03-10 16:54:53,0.004s,PASSED
+"verifyElementText(response, ""id"", ""1"")",,,,2024-03-10 16:54:53,2024-03-10 16:54:53,0.055s,PASSED
+"verifyElementText(response, ""username"", ""testuser01"")",,,,2024-03-10 16:54:53,2024-03-10 16:54:53,0.051s,PASSED
+"verifyElementText(response, ""firstName"", ""Test"")",,,,2024-03-10 16:54:53,2024-03-10 16:54:53,0.052s,PASSED
+"verifyElementText(response, ""lastName"", ""User"")",,,,2024-03-10 16:54:53,2024-03-10 16:54:53,0.049s,PASSED
+"verifyElementText(response, ""email"", ""test1@email.com"")",,,,2024-03-10 16:54:53,2024-03-10 16:54:53,0.049s,PASSED
+,,,,,,,
+Test Cases/User/03 Login,,,,2024-03-10 16:54:53,2024-03-10 16:54:56,2.258s,PASSED
+"response = sendRequest(findTestObject(""Login""))",,,,2024-03-10 16:54:54,2024-03-10 16:54:56,1.350s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2024-03-10 16:54:56,2024-03-10 16:54:56,0.003s,PASSED
+"containsString(response, ""logged in"", false)",,,,2024-03-10 16:54:56,2024-03-10 16:54:56,0.024s,PASSED
+,,,,,,,
+Test Cases/User/04 Update User,,,,2024-03-10 16:54:56,2024-03-10 16:54:58,2.172s,PASSED
+"response = sendRequest(findTestObject(""Update User""))",,,,2024-03-10 16:54:57,2024-03-10 16:54:58,1.309s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2024-03-10 16:54:58,2024-03-10 16:54:58,0.004s,PASSED
+,,,,,,,
+Test Cases/User/05 Get updated user data,,,,2024-03-10 16:54:58,2024-03-10 16:55:00,2.226s,PASSED
+"response = sendRequest(findTestObject(""Get user by username""))",,,,2024-03-10 16:54:59,2024-03-10 16:55:00,1.255s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2024-03-10 16:55:00,2024-03-10 16:55:00,0.003s,PASSED
+"verifyElementText(response, ""username"", ""testuser01"")",,,,2024-03-10 16:55:00,2024-03-10 16:55:00,0.048s,PASSED
+"verifyElementText(response, ""firstName"", ""Changed"")",,,,2024-03-10 16:55:00,2024-03-10 16:55:00,0.056s,PASSED
+"verifyElementText(response, ""lastName"", ""User"")",,,,2024-03-10 16:55:00,2024-03-10 16:55:00,0.052s,PASSED
+,,,,,,,
+Test Cases/User/06 Delete user,,,,2024-03-10 16:55:00,2024-03-10 16:55:02,2.203s,PASSED
+"response = sendRequest(findTestObject(""Delete user""))",,,,2024-03-10 16:55:01,2024-03-10 16:55:02,1.282s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2024-03-10 16:55:02,2024-03-10 16:55:02,0.004s,PASSED
+"verifyElementText(response, ""message"", ""testuser01"")",,,,2024-03-10 16:55:02,2024-03-10 16:55:02,0.074s,PASSED
+,,,,,,,
+Test Cases/User/07 Check user is deleted,,,,2024-03-10 16:55:02,2024-03-10 16:55:05,2.128s,PASSED
+"response = sendRequest(findTestObject(""Get user by username""))",,,,2024-03-10 16:55:03,2024-03-10 16:55:05,1.240s,PASSED
+"verifyResponseStatusCode(response, 404)",,,,2024-03-10 16:55:05,2024-03-10 16:55:05,0.003s,PASSED

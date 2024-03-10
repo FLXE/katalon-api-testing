@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="User API Smoke test" time="20.796" tests="7" failures="0" errors="0">
+   <testsuite name="User API Smoke test" tests="7" failures="0" errors="0" time="20.796" skipped="0" timestamp="2024-03-10 16:54:44" hostname="wisam - DESKTOP-SE258RV" id="Test Suites/User/User API Smoke test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\wisam\\git\\katalon-api-testing\\Reports\\20240310_165438\\User\\User API Smoke test\\20240310_165438"/>
+         <property name="logFiles" value="C:\\Users\\wisam\\git\\katalon-api-testing\\Reports\\20240310_165438\\User\\User API Smoke test\\20240310_165438\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="wisam - DESKTOP-SE258RV"/>
+         <property name="hostAddress" value="192.168.1.2"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.6.5.208"/>
+      </properties>
+      <testcase name="Test Cases/User/01 Create new user" time="6.787" classname="Test Cases/User/01 Create new user" status="PASSED">
+         <system-out><![CDATA[2024-03-10 16:54:44 - [TEST_CASE][PASSED] - Test Cases/User/01 Create new user: Test Cases/User/01 Create new user
+
+2024-03-10 16:54:45 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Create User by with Array")): Send request successfully
+
+2024-03-10 16:54:51 - [MESSAGE][INFO] - HAR: C:\Users\wisam\git\katalon-api-testing\Reports\20240310_165438\User\User API Smoke test\20240310_165438\requests\main\0.har
+
+2024-03-10 16:54:51 - [MESSAGE][PASSED] - Send request successfully
+
+2024-03-10 16:54:51 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2024-03-10 16:54:51 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-03-10 16:54:51 - [TEST_STEP][PASSED] - verifyElementText(response, "message", "ok"): Verify element text successfully
+
+2024-03-10 16:54:51 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/User/02 Get created user data" time="2.323" classname="Test Cases/User/02 Get created user data" status="PASSED">
+         <system-out><![CDATA[2024-03-10 16:54:51 - [TEST_CASE][PASSED] - Test Cases/User/02 Get created user data: Test Cases/User/02 Get created user data
+
+2024-03-10 16:54:52 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Get user by username")): Send request successfully
+
+2024-03-10 16:54:53 - [MESSAGE][INFO] - HAR: C:\Users\wisam\git\katalon-api-testing\Reports\20240310_165438\User\User API Smoke test\20240310_165438\requests\main\1.har
+
+2024-03-10 16:54:53 - [MESSAGE][PASSED] - Send request successfully
+
+2024-03-10 16:54:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2024-03-10 16:54:53 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-03-10 16:54:53 - [TEST_STEP][PASSED] - verifyElementText(response, "id", "1"): Verify element text successfully
+
+2024-03-10 16:54:53 - [MESSAGE][PASSED] - Verify element text successfully
+
+2024-03-10 16:54:53 - [TEST_STEP][PASSED] - verifyElementText(response, "username", "testuser01"): Verify element text successfully
+
+2024-03-10 16:54:53 - [MESSAGE][PASSED] - Verify element text successfully
+
+2024-03-10 16:54:53 - [TEST_STEP][PASSED] - verifyElementText(response, "firstName", "Test"): Verify element text successfully
+
+2024-03-10 16:54:53 - [MESSAGE][PASSED] - Verify element text successfully
+
+2024-03-10 16:54:53 - [TEST_STEP][PASSED] - verifyElementText(response, "lastName", "User"): Verify element text successfully
+
+2024-03-10 16:54:53 - [MESSAGE][PASSED] - Verify element text successfully
+
+2024-03-10 16:54:53 - [TEST_STEP][PASSED] - verifyElementText(response, "email", "test1@email.com"): Verify element text successfully
+
+2024-03-10 16:54:53 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/User/03 Login" time="2.258" classname="Test Cases/User/03 Login" status="PASSED">
+         <system-out><![CDATA[2024-03-10 16:54:53 - [TEST_CASE][PASSED] - Test Cases/User/03 Login: Test Cases/User/03 Login
+
+2024-03-10 16:54:54 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Login")): Send request successfully
+
+2024-03-10 16:54:56 - [MESSAGE][INFO] - HAR: C:\Users\wisam\git\katalon-api-testing\Reports\20240310_165438\User\User API Smoke test\20240310_165438\requests\main\2.har
+
+2024-03-10 16:54:56 - [MESSAGE][PASSED] - Send request successfully
+
+2024-03-10 16:54:56 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2024-03-10 16:54:56 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-03-10 16:54:56 - [TEST_STEP][PASSED] - containsString(response, "logged in", false): Check contain string successfully
+
+2024-03-10 16:54:56 - [MESSAGE][PASSED] - Check contain string successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/User/04 Update User" time="2.172" classname="Test Cases/User/04 Update User" status="PASSED">
+         <system-out><![CDATA[2024-03-10 16:54:56 - [TEST_CASE][PASSED] - Test Cases/User/04 Update User: Test Cases/User/04 Update User
+
+2024-03-10 16:54:57 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Update User")): Send request successfully
+
+2024-03-10 16:54:58 - [MESSAGE][INFO] - HAR: C:\Users\wisam\git\katalon-api-testing\Reports\20240310_165438\User\User API Smoke test\20240310_165438\requests\main\3.har
+
+2024-03-10 16:54:58 - [MESSAGE][PASSED] - Send request successfully
+
+2024-03-10 16:54:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2024-03-10 16:54:58 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/User/05 Get updated user data" time="2.226" classname="Test Cases/User/05 Get updated user data" status="PASSED">
+         <system-out><![CDATA[2024-03-10 16:54:58 - [TEST_CASE][PASSED] - Test Cases/User/05 Get updated user data: Test Cases/User/05 Get updated user data
+
+2024-03-10 16:54:59 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Get user by username")): Send request successfully
+
+2024-03-10 16:55:00 - [MESSAGE][INFO] - HAR: C:\Users\wisam\git\katalon-api-testing\Reports\20240310_165438\User\User API Smoke test\20240310_165438\requests\main\4.har
+
+2024-03-10 16:55:00 - [MESSAGE][PASSED] - Send request successfully
+
+2024-03-10 16:55:00 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2024-03-10 16:55:00 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-03-10 16:55:00 - [TEST_STEP][PASSED] - verifyElementText(response, "username", "testuser01"): Verify element text successfully
+
+2024-03-10 16:55:00 - [MESSAGE][PASSED] - Verify element text successfully
+
+2024-03-10 16:55:00 - [TEST_STEP][PASSED] - verifyElementText(response, "firstName", "Changed"): Verify element text successfully
+
+2024-03-10 16:55:00 - [MESSAGE][PASSED] - Verify element text successfully
+
+2024-03-10 16:55:00 - [TEST_STEP][PASSED] - verifyElementText(response, "lastName", "User"): Verify element text successfully
+
+2024-03-10 16:55:00 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/User/06 Delete user" time="2.203" classname="Test Cases/User/06 Delete user" status="PASSED">
+         <system-out><![CDATA[2024-03-10 16:55:00 - [TEST_CASE][PASSED] - Test Cases/User/06 Delete user: Test Cases/User/06 Delete user
+
+2024-03-10 16:55:01 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Delete user")): Send request successfully
+
+2024-03-10 16:55:02 - [MESSAGE][INFO] - HAR: C:\Users\wisam\git\katalon-api-testing\Reports\20240310_165438\User\User API Smoke test\20240310_165438\requests\main\5.har
+
+2024-03-10 16:55:02 - [MESSAGE][PASSED] - Send request successfully
+
+2024-03-10 16:55:02 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2024-03-10 16:55:02 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-03-10 16:55:02 - [TEST_STEP][PASSED] - verifyElementText(response, "message", "testuser01"): Verify element text successfully
+
+2024-03-10 16:55:02 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/User/07 Check user is deleted" time="2.128" classname="Test Cases/User/07 Check user is deleted" status="PASSED">
+         <system-out><![CDATA[2024-03-10 16:55:02 - [TEST_CASE][PASSED] - Test Cases/User/07 Check user is deleted: Test Cases/User/07 Check user is deleted
+
+2024-03-10 16:55:03 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Get user by username")): Send request successfully
+
+2024-03-10 16:55:05 - [MESSAGE][INFO] - HAR: C:\Users\wisam\git\katalon-api-testing\Reports\20240310_165438\User\User API Smoke test\20240310_165438\requests\main\6.har
+
+2024-03-10 16:55:05 - [MESSAGE][PASSED] - Send request successfully
+
+2024-03-10 16:55:05 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 404): Verify response status code successfully
+
+2024-03-10 16:55:05 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2024-03-10 16:54:44 - [TEST_SUITE][PASSED] - User API Smoke test: Test Cases/User/07 Check user is deleted]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
