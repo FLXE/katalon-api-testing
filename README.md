@@ -5,7 +5,7 @@ This Repository contain automated API testing for [sample Petstore server](https
 
 ## Project Setup
 
-Clone this project and open the project using Katalon Studio.   
+Clone/Download this project and open the project folder using Katalon Studio.   
 
 ## Running the Project
 
